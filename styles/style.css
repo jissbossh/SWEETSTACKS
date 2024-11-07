@@ -1,53 +1,5 @@
-:root {
-/*
- #### **1. Fondo principal:**
-    - **Soft Pink (#FAD0C4)** o **Light Cream (#FFF1E6)** en secciones grandes de la página (fondo general o de áreas de recetas).
-    - Utiliza el **White (#FFFFFF)** en áreas de contenido para mejorar la legibilidad del texto. */
-    --primary-bacground: #FAD0C4;
-    --secondary-bacground: #FFF1E6;
-    --tertiary-bacground: #6E4B3A;
-    --secondary-bacground: #110a06;
- /* #### **2. Tipografía:**
-    - Usa colores como
-    **Chocolate Brown (#6E4B3A)** para los títulos y encabezados.
-    - Para el texto principal y párrafos, puedes usar un color más neutro, como el **Light Cream (#FFF1E6)** sobre un fondo blanco o
-       **Mint Green (#A8E6CF)** para acentos y detalles. */
-    --primary-color:#110a06;
-    --secondary-color:#6E4B3A;
-    --tertiary-color:#A8E6CF;
-    --fourth-color:#FFF1E6;
- /* #### **3. Botones de Acción:**
-    - Para los botones de acción principales, como "Ver receta", "Añadir a favoritos", utiliza
-        **Peachy (#FFBCB3)** o
-        **Candy Pink (#FF66B2)**.
-        Estos colores atraerán al usuario y se destacarán en el diseño. */
-        --button-primary-color:#FFBCB3;
-        --button-secondary-color:#FF66B2;
-        --button-tertiary-color:#A8E6CF;
-        --button-fourth-color:#FFF1E6;
- /* #### **4. Elementos Decorativos:**
-    - **Mint Green (#A8E6CF)** y **Lavender Mist (#D1B2FF)** pueden ser ideales para detalles secundarios como iconos, bordes finos, o separadores entre secciones. */
-    --details-primary-color:#A8E6CF;
-    --details-secondary-color:#D1B2FF;
-    --details-tertiary-color:#A8E6CF;
-    --details-fourth-color:#FFF1E6;
-
- /* #### **5. Diseño Adaptable:**
-    - La paleta está pensada para funcionar bien tanto en versiones de escritorio como móviles, proporcionando un diseño claro y moderno que se adapta a diferentes tamaños de pantalla. */
-
- /* ### Combinación y Estilo:
-
- Este esquema de colores sigue principios de diseño **minimalista** y **limpio**, con un uso equilibrado de colores cálidos y fríos, asegurando que el sitio sea fácil de navegar y agradable para la vista. El uso de **colores pastel** junto con acentos más vibrantes permite resaltar las acciones clave (como los botones de llamada a la acción) sin hacer que el diseño sea recargado. */
-
- /* Este tipo de diseño se basa en **espacios blancos**, **tipografía legible**, y **colores armoniosos**, lo que resulta en una experiencia visual que invita a los usuarios a explorar más recetas de postres sin sentirse abrumados. ¡Perfecto para un sitio web delicioso y atractivo!
-  */
-
-
-}
-
-html,body {
-    background: var(--bacground-primary);
-    color: var(--secondary-color);
+body {
+    background: #FAD0C4;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -55,52 +7,30 @@ html,body {
     position: relative;
 }
 
-
-/* Header fijo en la parte superior */
 header {
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px; */
+    background-color: rgb(237, 178, 100);
+    padding: 10px;
     z-index: 1000;
-    /* Asegura que el header esté por encima de otros elementos */
 }
 
-/* Footer fijo en la parte inferior */
-footer {
-    /* position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 5px; */
-    z-index: 1000;
-}
+
 
 .encabezado {
-    background-color: var(--tertiary-bacground);
-    height: 60px;
-    color: var(--fourth-color);
-    padding: 10px 20px;
+    height: 4%;
+    color: #FFF1E6;
     position: relative;
-    z-index: 10;
+    z-index: 20;
 }
 
 .logo {
-    color: var(--fourth-color);
-    line-height: 40px;
-    font-size: 24px;
-    float: left;
+    padding: 20px 100px;
+    width: 40%;
 }
 
 .menu {
     float: right;
+    padding: 20px;
+    position: relative;
 }
 
 .menu ul {
@@ -115,101 +45,221 @@ footer {
 }
 
 .menu ul li a {
-    color: var(--fourth-color);
+    color: rgb(110, 37, 16);
     text-decoration: none;
-    background-color: var(--tertiary-bacground);
     padding: 10px 15px;
     display: block;
+    font-size: 20px;
+    color: #FFF1E6;
+    text-decoration: none;
 }
 
-.menu ul li:hover > a {
-    background-color: var(--button-fourth-color);
-    color: var(--primary-color);
+.menu ul li:hover>a {
+    background-color: #FAD0C4;
 }
 
-.menu ul ul{
+.menu ul ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
+    background-color: rgb(237, 178, 100);
     min-width: 150px;
 }
 
-.menu ul li:hover > ul {
+
+.menu ul li:hover>ul {
     display: block;
+    background-color: rgb(237, 178, 100);
 }
 
 .menu ul ul li {
     display: block;
 }
 
-.pie {
-    background-color: var(--tertiary-bacground);
-    color: var(--fourth-color);
+.menu ul ul li:hover {
+    display: block;
+    background-color: rgb(237, 178, 100);
+}
+
+/*PIE DE PAGINA */
+
+.footer {
+    background-color: rgb(237, 178, 100);
+    color: rgb(110, 37, 16);
     text-align: center;
     padding: 20px;
 }
 
-.contenedor {
-    overflow: hidden;
-    height: 100%;
+.pie {
+    padding: 1px;
     position: relative;
+    font-size: 15px;
 }
 
-.lateral {
-    width: 200px;
-    background-color: lightgrey;
-    float: left;
-    padding: 20px;
-    height: 100%;
-    position: absolute;
-
+.pie ul {
+    list-style: none;
+    padding: 0;
 }
 
-.principal {
-    margin-left: 240px;
-    padding: 20px;
+.pie ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
 }
 
-.foto {
-    width: 300px;
-    height: 200px;
-}
-
-.contacto {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-
-}
-
-.contacto label{
+.pie ul li a {
+    color: rgb(110, 37, 16);
+    text-decoration: none;
+    padding: 10px 15px;
     display: block;
-    margin-top: 10px;
+    font-size: 15px;
 }
 
-.contacto input[type="text"],
-.contacto input[type="email"],
-.contacto textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
+.pie ul li:hover a {
+    background-color: #FAD0C4;
+}
+
+/* PRINCIPAL */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.contacto input[type="submit"] {
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 20px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px; */
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container img {
+    width: 50%;
+}
+
+.img_panaderia {
+    float: right;
+}
+
+.descripcion_gourmet {
+    width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.descripcion_panaderia {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+/*TESTIMONIOS */
+
+#test {
+    background-color: #ffe4b2;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section_testimonios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.testimonial img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.testimonial p {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.img_test {
+    width: 75%;
+}
+
+/*BANNER */
+
+.banner {
+    background-color: #ffe4b2;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner button {
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    margin: 10px;
+    background-color: #f77f00;
     border: none;
-    border-radius: 4px;
-    margin-top: 10px;
+    color: #FFF1E6;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.contacto input[type="submit"]:hover {
-    background-color: #555;
+.banner button a {
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    color: #FFF1E6;
 }
 
+.banner button:hover, .banner a:hover {
+    background-color: #FFF1E6;
+    color: #110a06;
+    cursor: pointer;
+}
 
+.copyright {
+    margin: 10px;
+}
