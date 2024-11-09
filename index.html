@@ -34,7 +34,7 @@
           <h2>¿Qué Hacemos?</h2>
           <section class="container">
             <!-- <img class="img_gourmet" src="img/gourmet.webp" alt="img_gourmet" /> -->
-            <img class="" src="img/banner.webp" alt="img_gourmet" />
+            <img class src="img/banner.webp" alt="img_gourmet" />
             <p class="descripcion_gourmet">
               En nuestra página web de recetas, encontrarás una amplia variedad
               de
@@ -45,8 +45,9 @@
               día.
             </p>
             <div class="expo_recetas">
-              <button>
-                <a href="html/recetas.html">Explorar mas recetas</a></button>
+              <button onclick="window.location.href='html/recetas.html'">
+                Explorar mas recetas
+              </button>
             </div>
           </section>
           <!--<section class="container">
@@ -114,8 +115,16 @@
 
       <section class="banner">
         <h3>Suscribete a nuestro boletin de recetas!!</h3>
-        <p>recibe las mejores recetas directamente en tu correo cada semana</p>
-        <button class>Suscribete Ahora</button>
+        <label id="labelEmail" for="email">Recibe las mejores recetas
+          directamente en tu correo cada semana</label>
+        <form action class="form_group">
+          <!-- <p>recibe las mejores recetas directamente en tu correo cada -->
+          <!-- semana</p> -->
+          <!-- <label id="labelEmail" for="email">Recibe las mejores recetas directamente en tu correo cada semana</label> -->
+          <input type="email" name="email" id="email"
+            placeholder="Escribe tu email" required>
+          <button class type="submit">Suscribete Ahora</button>
+        </form>
       </section>
     </main>
 

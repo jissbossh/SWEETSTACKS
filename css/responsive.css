@@ -2,18 +2,438 @@
     .gallery {
         grid-template-columns: 1fr;
         width: 100%;
+        margin-left: 0px;
     }
 }
 
-@media only screen and (max-width: 850px) {
+
+@media (max-width: 768px) {
+
+    /* media query header */
+    .menu {
+        padding: 10px;
+        float: none;
+        /* El menú se alinea en bloque, no flotante */
+        text-align: center;
+    }
+
+    .menu ul {
+        display: flex;
+        /* Usamos flexbox para alinear los items en fila */
+        justify-content: center;
+        /* Centrar los elementos */
+        gap: 20px;
+        /* Espaciado entre los elementos */
+    }
+
+    .menu ul li {
+        margin-left: 0;
+        /* Eliminar el margen izquierdo innecesario */
+    }
+
+    .menu ul li a {
+        font-size: 18px;
+        /* Reducir tamaño de fuente */
+        padding: 8px 12px;
+        /* Ajustar el padding */
+    }
+
+    /* media query header */
+
+    /* media query main */
+    .main h2:first-child {
+        font-size: 28px;
+    }
+
+    .container img {
+        width: 60%;
+        height: auto;
+    }
+
+    .descripcion_gourmet,
+    .descripcion_panaderia {
+        width: 80%;
+        padding: 10px;
+        text-align: center;
+    }
+
     .gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        margin-left: 0px;
+    }
+
+    .testimonial {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .testimonial img {
         width: 100%;
     }
 
-    .logo {
-        width: 40%;
+    .banner {
+        flex-direction: column;
+        gap: 10px;
     }
+
+    .gallery_item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section_contact {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .section_social h2 {
+        font-size: 24px;
+    }
+
+    .icon_social {
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* media query main */
+
+
+    /* media query footer */
+    .pie ul {
+        grid-template-columns: 1fr 1fr;
+        /* Dos columnas */
+    }
+
+    .pie ul li a {
+        font-size: 14px;
+        /* Reducir el tamaño de fuente */
+        padding: 8px 12px;
+        /* Ajustar el espaciado */
+    }
+
+    /* media query footer */
+
+    .recetas_detalle img {
+        height: auto; /* Ajusta la altura de la imagen a su tamaño natural */
+        width: 60%; /* La imagen ocupa todo el ancho disponible */
+      }
+
+      .recetas_detalle h2 {
+        font-size: 24px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+      }
+
+      .recetas_detalle ul,
+      .recetas_detalle ol {
+        grid-template-columns: 1fr; /* Muestra los elementos en una sola columna */
+        margin: 10px 0; /* Ajusta el margen */
+      }
+
+      .recetas_detalle_item {
+        margin: 10px; /* Ajusta el margen en pantallas pequeñas */
+      }
+
+      .recetas_detalle_item h3 {
+        margin: 10px 0; /* Ajusta el margen de los títulos */
+      }
+
 
 }
 
+
+@media (max-width: 480px) {
+
+    /* General adjustments */
+    body {
+        font-size: 14px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .principal-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* Main headers */
+    .main h2:first-child {
+        font-size: 24px;
+    }
+
+    /* Images adjustments */
+    .container img {
+        width: 70%;
+        /* Reduce image size */
+        height: auto;
+    }
+
+    /* Description containers */
+    .descripcion_gourmet,
+    .descripcion_panaderia {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Carousel button */
+    .expo_recetas button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Testimonial Section */
+    .section_testimonios {
+        grid-template-columns: 1fr;
+        /* Stack testimonials vertically */
+    }
+
+    .testimonial {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .testimonial p {
+        font-size: 14px;
+    }
+
+    /* Banner Section */
+    .banner {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .banner button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    /* Recetas */
+    .gallery {
+        grid-template-columns: 1fr;
+        /* Stack images vertically */
+        gap: 10px;
+        margin-left: 0px;
+    }
+
+    .gallery_item {
+        flex: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .container-img-recetas {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 5px;
+    }
+
+    .gallery_item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .info-recetas {
+        margin: 0;
+    }
+
+    .boton-ver-receta {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Contact Form */
+    .section_contact {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .section_contact h2 {
+        font-size: 24px;
+    }
+
+    .contact_form {
+        gap: 15px;
+    }
+
+    .form_group label {
+        font-size: 14px;
+    }
+
+    .form_group input,
+    .form_group textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .form_group input[type="submit"],
+    .form_group button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Social section */
+    .section_social {
+        padding: 15px 0;
+    }
+
+    .section_social h2 {
+        font-size: 24px;
+    }
+
+    .icon_social {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .recetas_detalle img {
+        padding-left: 0px;
+    }
+
+    .recetas_detalle img {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    /* media query header */
+    .menu {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        /* Los items del menú estarán en columna */
+        gap: 10px;
+        /* Menor espacio entre los elementos */
+    }
+
+    .menu ul li {
+        display: block;
+        /* Cada item se mostrará en su propia línea */
+        margin-left: 0;
+        /* Eliminar margen izquierdo */
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+        /* Ajustar tamaño de fuente para móviles */
+        padding: 6px 10px;
+        /* Ajustar el padding para pantallas pequeñas */
+    }
+
+    /* media query header */
+
+    /* media query main */
+    .main h2:first-child {
+        font-size: 24px;
+    }
+
+    .gallery_item a img {
+        height: 150px;
+        width: 150px;
+    }
+
+
+    .container img {
+        width: 80%;
+        height: auto;
+    }
+
+    .descripcion_gourmet,
+    .descripcion_panaderia {
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .testimonial {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .testimonial img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery_item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section_contact {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .section_social h2 {
+        font-size: 20px;
+    }
+
+    .icon_social {
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .form_group input[type="submit"],
+    .form_group button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* media query main */
+
+
+    /* media query footer */
+    .footer {
+        padding: 10px;
+        /* Reducir el padding */
+    }
+
+    .pie ul {
+        grid-template-columns: 1fr;
+        /* Una columna en pantallas más pequeñas */
+    }
+
+    .pie ul li a {
+        font-size: 12px;
+        /* Aumentar la legibilidad en pantallas pequeñas */
+        padding: 6px 10px;
+        /* Reducir el padding */
+    }
+
+    /* media query footer */
+}
