@@ -355,6 +355,7 @@ body {
 
 .form_group input,
 .form_group textarea {
+  font-family: Arial, Helvetica, sans-serif;
   border-style: none;
   padding: 15px;
   font-size: 16px;
@@ -362,11 +363,13 @@ body {
   background-color: #fff;
   /* modificado por jiss */
   color: rgb(110, 37, 16);
+  border: 2px solid #fff;
 }
 
-.form_group textarea,
+.form_group textarea:focus,
 .form_group input:focus {
   outline-color: rgb(237, 178, 100);
+  border: 2px solid rgb(237, 178, 100);
 }
 
 /* modificado por jiss */
@@ -388,10 +391,17 @@ body {
 .form_group input[type="submit"]:hover,
 .form_group button:hover {
   /* background-color: #fff0f0; */
-  color: rgb(237, 178, 100);
+  background-color: rgb(237, 178, 100);
   color: black;
   border: 2px solid white;
 }
+
+/* modificado por jiss */
+.form_group textarea:hover ,
+.form_group input:hover {
+  border: 2px solid rgb(237, 178, 100);
+}
+
 
 /* modificado por jiss */
 .form_group {

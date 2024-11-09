@@ -1,3 +1,5 @@
+<img class="" src="https://i0.wp.com/www.talentotechoriente.com/wp-content/uploads/2023/12/LOGO-TALENTO-ORIENTE-COLOR-SOMBRA.png?resize=900%2C600&ssl=1" alt="Logo Talento Tech Oriente"/>
+
 # SweetStacks 🍰🍲
 
 **SweetStacks** es una plataforma de recetas de comida diseñada para los amantes de la cocina que buscan inspiración, instrucciones claras y una experiencia visual atractiva. Este proyecto fue desarrollado como parte de un bootcamp, y combina un enfoque moderno en diseño web con funcionalidades interactivas para brindar a los usuarios una experiencia práctica y útil.
