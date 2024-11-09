@@ -1,0 +1,48 @@
+
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(237, 178, 100);
+  padding: 10px;
+}
+
+.encabezado {
+  color: white;
+}
+
+.logo {
+  padding: 20px 0;
+  /* border: 0.1px solid rgb(10, 10, 10); */
+}
+
+.menu {
+  float: right;
+  padding: 20px;
+  position: relative;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  position: relative;
+  margin-left: 2 0px;
+}
+
+.menu ul li a {
+  color: rgb(110, 37, 16);
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-size: 20px;
+}
+
+.menu ul li:hover > a {
+  background-color: #fad0c4;
+  color: #110a06;
+}

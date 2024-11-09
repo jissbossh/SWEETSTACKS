@@ -1,154 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+      content="width=device-width, initial-scale=1.0" />
     <title>SWEETSTACKS</title>
-    <!-- <style>
-        /* Estilos generales para el layout */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  </head>
 
-        /* Header fijo en la parte superior */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            z-index: 1000;
-            /* Asegura que el header esté por encima de otros elementos */
-        }
-
-        header .logo {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background-color: white;
-            margin-right: 20px;
-            border-radius: 50%;
-        }
-
-        header nav {
-            /* display: inline-block; */
-            float:right;
-            align-items: center;
-        }
-
-        header nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        header nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Barra de navegación */
-        nav a {
-            padding: 10px 15px;
-        }
-
-        /* Asegura que el contenido principal no se superponga con el header */
-        .content {
-            padding-top: 80px;
-            /* Deja espacio para el header */
-        }
-
-        /* Footer fijo en la parte inferior */
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            z-index: 1000;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-    </style> -->
-     <link rel="stylesheet" href="styles/reset.css">
-     <link rel="stylesheet" href="styles/style.css">
-     <link rel="stylesheet" href="styles/responsive.css">
-     <script src="scripts/script.js" defer></script>
-    <script>
-        // Redirigir a otra página después de que se cargue el index
-        window.onload = function () {
-            // setTimeout(function() {
-                window.location.href = "views/home.html"; // Cambia esta URL a la página que quieras
-            // }, 2000); // Retraso de 2 segundos
-        }
-    </script>
-</head>
-
-<body>
-    <!-- Header con logo y barra de navegación -->
-    <header>
-        <div class="logo"></div>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
-        </nav>
+  <body>
+    <header class="Encabezado">
+      <a href="index.html"><img class="logo"
+          src="img/logo.svg"
+          alt /></a>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Acerca de</a></li>
+          <li><a href="html/recetas.html">Recetas</a></li>
+          <li><a href="html/contacto.html">Contactanos</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Contenido principal -->
-    <div class="content">
-        <h1>Bienvenido a la Página Principal</h1>
-        <p>Serás redirigido a otra página en breve...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos
-            soluta ut atque velit veniam autem. Sequi, itaque deserunt animi, a
-            alias illum nesciunt ratione culpa minus nisi laborum odio.</p>
-    </div>
+    <main class="main">
+      <div class="test">
+        <div class="principal-container">
+          <h2>¿Qué Hacemos?</h2>
+          <section class="container">
+            <!-- <img class="img_gourmet" src="img/gourmet.webp" alt="img_gourmet" /> -->
+            <img class="" src="img/banner.webp" alt="img_gourmet" />
+            <p class="descripcion_gourmet">
+              En nuestra página web de recetas, encontrarás una amplia variedad
+              de
+              opciones culinarias que te inspirarán a preparar comidas
+              deliciosas
+              y saludables. Ofrecemos recetas detalladas que van desde platos
+              principales beneficiosos hasta opciones rápidas y fáciles para el
+              día.
+            </p>
+            <div class="expo_recetas">
+              <button>
+                <a href="html/recetas.html">Explorar mas recetas</a></button>
+            </div>
+          </section>
+          <!--<section class="container">
+        <p class="descripcion_panaderia">
+          En nuestra página web de recetas de repostería, te ofrecemos una
+          deliciosa selección de postres y dulces que harán que cualquier
+          ocasión sea especial. Desde cupcakes decorados con hermosos glaseados,
+          hasta esponjosos panqueques y pasteles, aquí encontrarás recetas que
+          son tanto visualmente atractivas como irresistibles al paladar.Ya seas
+          amante de los cupcakes creativos o de los pancakes caseros para el
+          desayuno, cada receta está diseñada para que sigas los pasos
+          fácilmente, con ingredientes comunes y técnicas sencillas. Además, te
+          proporcionamos consejos para personalizar tus creaciones con
+          decoraciones únicas y cómo conseguir la textura perfecta en cada
+          bocado. Si buscas impresionar con tus habilidades de repostería o
+          simplemente disfrutar de un dulce casero, este es el lugar para ti.
+          ¡Deja volar tu creatividad y endulza tu día!
+        </p>
+        <img class="img_panaderia" src="img/panaderia.webp" alt="" />
+      </section>-->
+          <!-- <section>
+          <div class="expo_recetas">
+            <button>Explorar mas recetas</button>
+          </div>
+        </section> -->
+        </div>
+      </div>
+      <div id="test"
+        class="test">
+        <h3 class="destaque_titulo">Testimonios</h3>
+        <section class="section_testimonios">
+          <div class="testimonial">
+            <img class="img_test"
+              src="img/Ana_M..webp"
+              alt="Testimonio 1" />
+            <p>
+              "Estas recetas me ayudaron a mejorar mis habilidades en la cocina.
+              ¡Los platillos son increíbles!"
+            </p>
+            <p>María P.</p>
+          </div>
+          <div class="testimonial">
+            <img class="img_test"
+              src="img/Juan_P..webp"
+              alt="Testimonio 2" />
+            <p>
+              "Gracias a sus recetas, he podido sorprender a mi familia con
+              postres deliciosos."
+            </p>
+            <p>Carlos L.</p>
+          </div>
+          <div class="testimonial">
+            <img class="img_test"
+              src="img/Maria_L.webp"
+              alt="Testimonio 1" />
+            <p>
+              "Siempre había pensado que cocinar comidas deliciosas era
+              complicado, pero gracias a estas recetas, logró sorprender a mi
+              familia con platos increíbles."
+            </p>
+            <p>María P.</p>
+          </div>
+        </section>
+      </div>
 
-    <!-- Footer fijo -->
-    <footer>
-        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+      <section class="banner">
+        <h3>Suscribete a nuestro boletin de recetas!!</h3>
+        <p>recibe las mejores recetas directamente en tu correo cada semana</p>
+        <button class>Suscribete Ahora</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="pie">
+        <ul>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Terminos y Condiciones</a></li>
+          <!-- <li><a href="#">Trabaja con nosotros</a></li> -->
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Accesibilidad</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2024 SWEETSTACKS. Todos los derechos reservados.</p>
+      <p>Desarrollado por:</p>
     </footer>
-</body>
+  </body>
 
 </html>
