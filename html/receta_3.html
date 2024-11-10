@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SWEETSTACKS</title>
+    <!-- <link rel="stylesheet" href="../css/reset.css" /> -->
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/recetas.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
   </head>
 
   <body>
     <header class="Encabezado">
-      <img class="logo" src="../img/logo.svg" alt="" />
+      <a href="../index.html"><img class="logo"
+          src="../img/logo.svg"
+          alt /></a>
       <nav class="menu">
         <ul>
           <li><a href="../index.html">Acerca de</a></li>
@@ -23,13 +27,49 @@
       </nav>
     </header>
 
-    <main class="main">/*AGREGAR CONTENIDO PRINCIPAL*/</main>
+    <main class="recetas-container">
+      <div class="receta">
+        <h2 class="receta-titulo">Yogurt con granola y fruta</h2>
+        <div class="contenedor-img-receta">
+          <img
+            src="../img/recetas/yogurtGranola.png"
+            alt="Yogurt con granola y fruta" />
+        </div>
+        <p class="receta-descripcion">
+        </p>
+      </div>
+
+      <div class="derecha">
+        <div class="ingredientes">
+          <h3>Ingredientes:</h3>
+          <ul>
+            <li>1 taza de granola</li>
+            <li>1 1/2 taza de yogurt natural</li>
+            <li>1 manzana verde picada</li>
+            <li>1 manzana roja picada</li>
+            <li>Miel, al gusto (opcional)</li>
+            <li>Arándanos</li>
+          </ul>
+        </div>
+
+        <div class="instrucciones">
+          <h3>¿Cómo prepararlo?!</h3>
+          <ol>
+            <li>En un recipiente coloca una capa de granola</li>
+            <li>Agrega el yogurt natural.</li>
+            <li>Agrega las manzanas picadas y la miel</li>
+            <li>Decora el parfait con los arándanos.</li>
+            <li>Sirve de inmediato o refrigéralo para la mañana siguiente.</li>
+          </ol>
+        </div>
+      </div>
+    </main>
 
     <footer class="footer">
       <nav class="pie">
         <ul>
-          <li><a href="#">Privacidad</a></li>
-          <li><a href="#">Terminos y Condiciones</a></li>
+          <!-- <li><a href="#">Privacidad</a></li> -->
+          <!-- <li><a href="#">Terminos y Condiciones</a></li> -->
           <!-- <li><a href="#">Trabaja con nosotros</a></li> -->
           <li><a href="#">Cookies</a></li>
           <li><a href="#">Accesibilidad</a></li>
@@ -37,7 +77,7 @@
         </ul>
       </nav>
       <p>&copy; 2024 SWEETSTACKS. Todos los derechos reservados.</p>
-      <p>Desarrollado por:</p>
+      <!-- <p>Desarrollado por:</p> -->
     </footer>
   </body>
 </html>

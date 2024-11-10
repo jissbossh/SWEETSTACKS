@@ -1,3 +1,6 @@
+/* #region header */
+
+
 header {
   position: sticky;
   top: 0;
@@ -44,3 +47,4 @@ header {
   background-color: #fad0c4;
   color: #110a06;
 }
+/* #endregion header */

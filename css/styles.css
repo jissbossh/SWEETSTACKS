@@ -1,11 +1,12 @@
 /* PRINCIPAL */
+/* #region main*/
+/* #region seccion principal*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* modificado por jiss */
 body {
   margin: 0;
   padding: 0;
@@ -23,11 +24,25 @@ body {
   padding: 20px 20px;
 }
 
+.titlo {
+  color: #3b1f1c !important;
+  text-align: center;
+  margin: 20px;
+  font-size: 34px;
+}
+
+.subtitulo {
+  color: #3b1f1c !important;
+  text-align: center;
+  margin: 20px;
+  font-size: 24px;
+}
+
 .main h2:first-child {
   color: #3b1f1c;
   text-align: center;
-  margin: 20px 0;
-  font-size: 32px;
+  margin: 60px 20px;
+  font-size: 40px;
 }
 
 .main h2:first-child:hover {
@@ -39,7 +54,6 @@ body {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  /* modificado por jiss */
   border: 2px solid rgb(237, 178, 100);
 }
 
@@ -82,34 +96,29 @@ body {
   text-align: left;
 }
 
-/*CARRUCEL */
 .expo_recetas {
   text-align: center;
 }
 
-/* modificado por jiss */
+
 .expo_recetas button {
   padding: 10px 20px;
-  /* modificado por jiss */
   margin-top: 20px;
-  /* background-color: #f77f00; */
   background-color: rgb(230, 150, 10);
   margin-top: 20px;
   border: 2px solid rgb(237, 178, 100);
-  /* color: white; */
   color: rgb(110, 37, 16);
-  /* border: none; */
   cursor: pointer;
 }
 
-/* agregado por jiss */
+
 .expo_recetas button:hover {
   background-color: rgb(230, 150, 100);
   color: black;
   border: 2px solid white;
 }
 
-/* agregado por jiss */
+
 .expo_recetas button:hover a {
   color: black;
 }
@@ -121,9 +130,9 @@ body {
   color: white;
 }
 
+/* #endregion seccion principal*/
 /*TESTIMONIOS */
-/* modificado por jiss */
-/* #test { */
+/* #region seccion de testimonios*/
 .test {
   background-color: #ffe4b2;
   padding: 20px;
@@ -147,11 +156,9 @@ body {
   padding: 10px;
   width: 380px;
   margin-bottom: 20px;
-  /* modificado por jiss */
   border: 2px solid rgb(237, 178, 100);
 }
 
-/*agrego por jiss*/
 .destaque_titulo {
   padding: 10px;
   margin: 40px;
@@ -176,8 +183,9 @@ body {
   width: 75%;
 }
 
+/* #endregion seccion de testimonios*/
 /*BANNER */
-
+/* #region seccion de banner*/
 .banner {
   background-color: #ffe4b2;
   padding: 20px;
@@ -191,20 +199,16 @@ body {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* modificado por jiss */
+
 .banner button {
   padding: 10px 20px;
-  /* modificado por jiss */
-  /* background-color: rgb(110, 37, 16); */
   background-color: rgb(230, 150, 10);
   margin-top: 20px;
   border: 2px solid rgb(237, 178, 100);
-  /* color: white; */
   color: rgb(110, 37, 16);
   border: none;
   font-size: 16px;
   cursor: pointer;
-
 }
 
 .banner button a {
@@ -224,12 +228,11 @@ body {
   color: #110a06;
 }
 
+/* #endregion seccion de banner*/
 /*RECETAS */
-
+/* #region seccion de recetas*/
 .recetas-container {
   padding: 20px;
-  /* modificado por jiss */
-  /* background-color: #f9d5c0; */
   background-color: #ffe4b2;
   margin: 20px;
   border-radius: 10px;
@@ -257,8 +260,6 @@ body {
   display: block;
   padding: 15px;
   color: #fff;
-  /* modificado por jiss */
-  /* background-color: rgb(236, 165, 100); */
   background-color: rgb(230, 150, 10);
   border: none;
   border-radius: 5px;
@@ -272,7 +273,6 @@ body {
 
 .boton-ver-receta:hover {
   background-color: rgb(230, 150, 100);
-  /* background-color: rgb(223, 179, 97); */
   color: black;
   border: 2px solid white;
 }
@@ -290,7 +290,6 @@ body {
   margin: 10px 10px;
   height: 250px;
 }
-
 
 .gallery_item a img {
   height: 250px;
@@ -319,13 +318,11 @@ body {
   font-weight: bold;
   color: #333;
 }
-
+/* #endregion seccion de recetas*/
 /*CONTACTO */
-
+/* #region seccion de contacto*/
 .section_contact {
   padding: 40px;
-  /* modificado por jiss */
-  /* background-color: #f9d5c0; */
   background-color: #ffe4b2;
   border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -335,7 +332,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* agregado por jiss */
 .section_contact h2 {
   font-size: 28px;
   margin-bottom: 20px;
@@ -359,14 +355,11 @@ body {
   flex-direction: column;
 }
 
-/* modificado por jiss */
 .form_group label {
   font-size: 16px;
   font-weight: 700;
   padding: 6px;
-  /* color: whitesmoke; */
   color: rgb(110, 37, 16);
-  /* agregado por jiss */
   background-color: rgb(237, 178, 100);
 }
 
@@ -378,7 +371,6 @@ body {
   font-size: 16px;
   border-radius: 5px;
   background-color: #fff;
-  /* modificado por jiss */
   color: rgb(110, 37, 16);
   border: 2px solid #fff;
 }
@@ -389,11 +381,10 @@ body {
   border: 2px solid rgb(237, 178, 100);
 }
 
-/* modificado por jiss */
+
 .form_group input[type="submit"],
 .form_group button {
   padding: 15px;
-  /* color: #fff; */
   color: rgb(110, 37, 16);
   background-color: rgb(237, 178, 100);
   border: none;
@@ -404,29 +395,24 @@ body {
   border: 2px solid rgb(237, 178, 100);
 }
 
-/* modificado por jiss */
 .form_group input[type="submit"]:hover,
 .form_group button:hover {
-  /* background-color: #fff0f0; */
   background-color: rgb(237, 178, 100);
   color: black;
   border: 2px solid white;
 }
 
-/* modificado por jiss */
 .form_group textarea:hover,
 .form_group input:hover {
   border: 2px solid rgb(237, 178, 100);
 }
 
-
-/* modificado por jiss */
 .form_group {
-  /* background-color: rgb(237, 178, 100); */
   background-color: transparent;
 }
-
+/* #endregion seccion de contacto*/
 /*SOCIAL */
+/* #region seccion de social*/
 .section_social {
   background-color: #f9d5c0;
   padding: 20px 0;
@@ -456,7 +442,7 @@ body {
   width: 100%;
   object-fit: cover;
 }
-
+/* #endregion seccion de social*/
 /* #region detalle de recetas  */
 .recetas_detalle {
   background-color: #ffe4b2;
@@ -501,14 +487,16 @@ body {
   margin: 20px;
 }
 
-.recetas_detalle_item  h3{
+.recetas_detalle_item h3 {
   text-align: left;
   margin: 20px;
   text-decoration: none;
 }
 
-.separador{
+.separador {
   /* border-top: 10px dashed rgb(237, 178, 100); */
   border-top: 10px dashed white;
 }
+
 /* #endregion detalle de recetas */
+/* #endregion main*/

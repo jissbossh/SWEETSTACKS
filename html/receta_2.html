@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SWEETSTACKS</title>
+    <!-- <link rel="stylesheet" href="../css/reset.css" /> -->
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/recetas.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
   </head>
 
   <body>
     <header class="Encabezado">
-      <img class="logo" src="../img/logo.svg" alt="" />
+      <a href="../index.html"><img class="logo"
+          src="../img/logo.svg"
+          alt /></a>
       <nav class="menu">
         <ul>
           <li><a href="../index.html">Acerca de</a></li>
@@ -23,13 +27,63 @@
       </nav>
     </header>
 
-    <main class="main">/*AGREGAR CONTENIDO PRINCIPAL*/</main>
+    <main class="recetas-container">
+      <div class="receta">
+        <h2 class="receta-titulo">Chips de vegetales caseros</h2>
+        <div class="contenedor-img-receta">
+          <img
+            src="../img/recetas/chipsDeVegetales.png"
+            alt="Chips de vegetales caseros" />
+        </div>
+        <p class="receta-descripcion">
+        </p>
+      </div>
+
+      <div class="derecha">
+        <div class="ingredientes">
+          <h3>Ingredientes:</h3>
+          <ul>
+            <li>1 yuca</li>
+            <li>2 zanahorias</li>
+            <li>2 remolachas</li>
+            <li>1 ramita de romero</li>
+            <li>sal (al gusto)</li>
+            <li>1/2 taza de azúcar</li>
+            <li>Pimienta</li>
+          </ul>
+        </div>
+
+        <div class="instrucciones">
+          <h3>¿Cómo prepararlo?!</h3>
+          <ol>
+            <li>
+              Corta las verduras Lava la remolacha, quítale el tallo y pélala.
+              Pela las zanahorias y despúntalas. Corta las verduras en láminas
+              finas con una mandolina.
+            </li>
+            <li>
+              Sazona las láminas Extiende las láminas en una bandeja de horno
+              forrada con papel sulfurizado. Píntalas con aceite y espolvoréalas
+              con una mezcla de sal, pimienta y romero picado.
+            </li>
+            <li>
+              Hornea las chips Da la vuelta a las rodajas y repite el proceso.
+              Introdúcelas en el horno precalentado a 180°.
+            </li>
+            <li>
+              Dales la vuelta Hornea durante unos 20-25 minutos, dándoles la
+              vuelta a mitad de cocción. Deben quedar secas y crujientes.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
 
     <footer class="footer">
       <nav class="pie">
         <ul>
-          <li><a href="#">Privacidad</a></li>
-          <li><a href="#">Terminos y Condiciones</a></li>
+          <!-- <li><a href="#">Privacidad</a></li> -->
+          <!-- <li><a href="#">Terminos y Condiciones</a></li> -->
           <!-- <li><a href="#">Trabaja con nosotros</a></li> -->
           <li><a href="#">Cookies</a></li>
           <li><a href="#">Accesibilidad</a></li>
@@ -37,7 +91,7 @@
         </ul>
       </nav>
       <p>&copy; 2024 SWEETSTACKS. Todos los derechos reservados.</p>
-      <p>Desarrollado por:</p>
+      <!-- <p>Desarrollado por:</p> -->
     </footer>
   </body>
 </html>

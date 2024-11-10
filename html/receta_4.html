@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SWEETSTACKS</title>
+    <!-- <link rel="stylesheet" href="../css/reset.css" /> -->
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/recetas.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
   </head>
 
   <body>
     <header class="Encabezado">
-      <img class="logo" src="../img/logo.svg" alt="" />
+      <a href="../index.html"><img class="logo"
+          src="../img/logo.svg"
+          alt /></a>
       <nav class="menu">
         <ul>
           <li><a href="../index.html">Acerca de</a></li>
@@ -23,13 +27,60 @@
       </nav>
     </header>
 
-    <main class="main">/*AGREGAR CONTENIDO PRINCIPAL*/</main>
+    <main class="recetas-container">
+      <div class="receta">
+        <h2 class="receta-titulo">Palitos de zanahoria con hummus</h2>
+        <div class="contenedor-img-receta">
+          <img
+            src="../img/recetas/palitosDeZanahoria.png"
+            alt="Palitos de zanahoria con hummus" />
+        </div>
+        <p class="receta-descripcion">
+        </p>
+      </div>
+
+      <div class="derecha">
+        <div class="ingredientes">
+          <h3>Ingredientes:</h3>
+          <ul>
+            <li>250g de garbanzos cocidos</li>
+            <li>1 diente de ajo</li>
+            <li>15g de crema de ajónjoli</li>
+            <li>50ml de aceite de oliva virgen extra</li>
+            <li>15ml de zumo de limón</li>
+            <li>4g de sal</li>
+            <li>150g de zanahoria</li>
+          </ul>
+        </div>
+
+        <div class="instrucciones">
+          <h3>¿Cómo prepararlo?!</h3>
+          <ol>
+            <li>
+              Escurrimos los garbanzos del jugo de cocción o de la conserva.
+            </li>
+            <li>
+              Los introducimos en un vaso de batidora junto con el diente de
+              ajo, la cucharadita de crema de ajónjoli (o una cucharadita de
+              semillas de sésamo ligeramente tostadas)
+            </li>
+            <li>Una cucharada de zumo de limón y el aceite de oliva.</li>
+            <li>Trituramos hasta conseguir una crema fina y brillante.</li>
+            <li>
+              Ponemos a punto de sal y servimos acompañado de unos bastoncitos
+              de zanahoria cruda, pelados y cortados de igual manera haciendo la
+              forma de bastón para que podamos untar en el humus de garbanzos.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
 
     <footer class="footer">
       <nav class="pie">
         <ul>
-          <li><a href="#">Privacidad</a></li>
-          <li><a href="#">Terminos y Condiciones</a></li>
+          <!-- <li><a href="#">Privacidad</a></li> -->
+          <!-- <li><a href="#">Terminos y Condiciones</a></li> -->
           <!-- <li><a href="#">Trabaja con nosotros</a></li> -->
           <li><a href="#">Cookies</a></li>
           <li><a href="#">Accesibilidad</a></li>
@@ -37,7 +88,7 @@
         </ul>
       </nav>
       <p>&copy; 2024 SWEETSTACKS. Todos los derechos reservados.</p>
-      <p>Desarrollado por:</p>
+      <!-- <p>Desarrollado por:</p> -->
     </footer>
   </body>
 </html>
